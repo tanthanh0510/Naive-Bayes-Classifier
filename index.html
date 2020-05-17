@@ -13218,6 +13218,20 @@ $$c=arc \max_{c \in \{c_1,c_2,..\}}\bigg[\log\big(p(c)\big)+\sum_{i=1}^d \log\bi
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Lưu ý:</strong> bước quan trọng nhất của thuật toán Naive Bayes là ước lượng $p(x_i|c)$:</p>
+<ul>
+<li><p>Nếu $x_i$ là biến liên tục : giả định biến $x_i$ tuân theo phân bố <em>Gaussian</em> và dùng tập train để ước lượng các tham số của phân bố này ($\mu$ và $\sigma$)</p>
+</li>
+<li><p>Nếu $x_i$ là biến rời rạc (biến phân loại) dùng tần số (số lần $x_i$ nhận giá trị $x_i$ có nhãn $c$) để ước lượng xác suất $p(x_i| c)$. Để tránh tần số bằng 0 làm cho xác suất bằng 0 thì áp dụng thêm phép làm trơn ( <em>smoothing</em> ) như <em>Laplacian smoothing</em> .</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="3.-C&#225;c-lo&#7841;i-ph&#226;n-ph&#7889;i-d&#7919;-li&#7879;u">3. C&#225;c lo&#7841;i ph&#226;n ph&#7889;i d&#7919; li&#7879;u<a class="anchor-link" href="#3.-C&#225;c-lo&#7841;i-ph&#226;n-ph&#7889;i-d&#7919;-li&#7879;u">&#182;</a></h1>
 </div>
 </div>
